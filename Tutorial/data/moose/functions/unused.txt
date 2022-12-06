@@ -1,0 +1,122 @@
+execute as @e[type=iceandfire:deathworm] run attribute @s forge:swim_speed base set 0
+execute as @e[type=iceandfire:deathworm] run data merge entity @s {Air:301}
+execute as @e[type=iceandfire:ghost] run attribute @s forge:swim_speed base set 0
+execute as @e[type=iceandfire:pixie] run attribute @s forge:swim_speed base set 0
+execute as @e[type=iceandfire:dread_ghoul] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=iceandfire:dread_ghoul] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=iceandfire:dread_ghoul,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=iceandfire:dread_beast] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=iceandfire:dread_beast] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=iceandfire:dread_beast,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=iceandfire:dread_knight] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=iceandfire:dread_knight] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=iceandfire:dread_knight,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=iceandfire:dread_thrall] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=iceandfire:dread_thrall] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=iceandfire:dread_thrall,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+
+execute as @e[type=slimier-slimes:rock_slime] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=slimier-slimes:rock_slime] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=slimier-slimes:rock_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=slimier-slimes:obsidian_slime] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=slimier-slimes:obsidian_slime] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=slimier-slimes:obsidian_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=slimier-slimes:obsidian_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ lava run data merge entity @s {Motion:[0.0,0.80,0.0]}
+execute as @e[type=slimier-slimes:obsidian_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ soul_sand run data merge entity @s {Motion:[0.0,0.80,0.0]}
+execute as @e[type=slimier-slimes:lava_slime] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=slimier-slimes:lava_slime] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=slimier-slimes:lava_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=slimier-slimes:lava_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ lava run data merge entity @s {Motion:[0.0,0.80,0.0]}
+execute as @e[type=slimier-slimes:lava_slime,nbt={OnGround:1b}] at @s if block ~ ~ ~ soul_sand run data merge entity @s {Motion:[0.0,0.80,0.0]}
+
+execute as @e[type=experimental_m:fiend] run attribute @s forge:swim_speed base set 0.1
+execute as @e[type=experimental_m:fiend,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+replaceitem entity @e[type=experimental_m:fiend] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:fiend_2] run attribute @s forge:swim_speed base set 0.1
+execute as @e[type=experimental_m:fiend_2,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.15,0.0]}
+replaceitem entity @e[type=experimental_m:fiend_2] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:chunchi_zombie] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:chunchi_zombie] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:chunchi_zombie,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+#effect give @e[type=experimental_m:chunchi_zombie] minecraft:dolphins_grace 999999 1 true
+execute as @e[type=experimental_m:charco] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:charco] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=lycanitesmobs:pixen] run attribute @s forge:swim_speed base set 0.5
+execute as @e[type=lycanitesmobs:cephignis,nbt=!{ExtraBehaviour:{FlightOverride:1b}}] run data merge entity @s {ExtraBehaviour:{FlightOverride:1b}}
+execute as @e[type=lycanitesmobs:salamander,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:sutiramu,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:darkling,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:crusk,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:malwrath,nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:shade,nbt={Variant:1b},nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:kathoga,nbt={Subspecies:1b},nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
+execute as @e[type=betteranimalsplus:lammergeier] at @s if block ~ ~ ~ water run data merge entity @s {IsFlying:1b}
+execute as @e[type=experimental_m:salta] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:salta] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:acid_slime] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:acid_slime] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:baby_acid_slime] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:baby_acid_slime] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=vex] run attribute @s forge:swim_speed base set 0
+execute as @e[type=experimental_m:grillydomes] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:grillydomes] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:pupet_zombie] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:pupet_zombie] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:pupetzombies_2] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:pupetzombies_2] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:warped_grilly] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:warped_grilly] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=lycanitesmobs:troll] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=lycanitesmobs:troll] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=lycanitesmobs:troll,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=dungeons_mobs:whisperer] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=dungeons_mobs:whisperer] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=dungeons_mobs:whisperer,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=experimental_m:guiso] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=experimental_m:guiso] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=experimental_m:guiso,nbt={OnGround:1b}] at @s if block ~ ~ ~ lava run data merge entity @s {Motion:[0.0,0.55,0.0]}
+execute as @e[type=betteranimalsplus:crab] run attribute @s forge:swim_speed base set 2
+replaceitem entity @e[type=betteranimalsplus:crab] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=mod_lavacow:banshee] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mod_lavacow:ptera] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mod_lavacow:graverobberghost] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mod_lavacow:seahag] run attribute @s forge:swim_speed base set 0
+#execute as @e[type=mod_lavacow:seahag,nbt=!{Fire:-1s}] run data merge entity @s {Motion:[0.0,-0.25,0.0]}
+execute as @e[type=mod_lavacow:wisp] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mod_lavacow:wraith] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mod_lavacow:ghostswarmer] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=mod_lavacow:ghostswarmer] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:800s}]} 1
+execute as @e[type=mod_lavacow:skeletonking] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mysticalworld:frog] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mysticalworld:frog] run data merge entity @s {Air:300}
+execute as @e[type=mod_lavacow:ghostray] run attribute @s forge:swim_speed base set 0
+execute as @e[type=mod_lavacow:ghostray] run data merge entity @s {Air:301}
+execute as @e[type=mod_lavacow:avaton] run attribute @s forge:swim_speed base set 0
+execute as @e[type=lycanitesmobs:naxiris,nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:cherufe,nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
+execute as @e[type=mod_lavacow:lavacow] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=mod_lavacow:lavacow] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=mod_lavacow:lavacow,nbt={OnGround:1b}] at @s if block ~ ~ ~ lava run data merge entity @s {Motion:[0.0,0.55,0.0]}
+#execute as @e[type=lycanitesmobs:epion,nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
+execute as @e[type=mysticalworld:lava_cat] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=mysticalworld:lava_cat] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=lycanitesmobs:ostimien,nbt={Variant:1b},nbt=!{ExtraBehaviour:{FlightOverride:1b}}] run data merge entity @s {ExtraBehaviour:{FlightOverride:1b}}
+execute as @e[type=lycanitesmobs:ostimien,nbt={Variant:2b},nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:triffid,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+#effect give @e[type=lycanitesmobs:geken] minecraft:dolphins_grace 999999 1 true
+execute as @e[type=twilightforest:naga] run attribute @s forge:swim_speed base set 4
+execute as @e[type=outer_end:stalker] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=outer_end:stalker] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:3s}]} 1
+execute as @e[type=outer_end:stalker,nbt={OnGround:1b}] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,0.25,0.0]}
+execute as @e[type=mod_lavacow:scarecrow] run attribute @s forge:swim_speed base set 0.1
+replaceitem entity @e[type=mod_lavacow:scarecrow] armor.feet chainmail_boots{Enchantments:[{id:"minecraft:depth_strider",lvl:100s}]} 1
+execute as @e[type=mod_lavacow:ghostray] at @s if block ~ ~ ~ soul_fire run data merge entity @s {Variant:1}
+execute as @e[type=lycanitesmobs:raiko,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=experimental_m:lameli] run attribute @s forge:swim_speed base set 0
+execute as @e[type=experimental_m:morb] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,-0.25,0.0]}
+execute as @e[type=experimental_m:vass] at @s if block ~ ~ ~ water run data merge entity @s {Motion:[0.0,-0.25,0.0]}
+execute as @e[type=direbats:direbat] run attribute @s forge:swim_speed base set 2
+execute as @e[type=direbats:direbat,nbt=!{Fire:-1s}] at @s if block ~ ~ ~ air run data merge entity @s {Motion:[0.0,-0.25,0.0]}
+execute as @e[type=mod_lavacow:seagull] run data merge entity @s {Variant:2}
+effect give @e[type=mysticalworld:frog] lycanitesmobs:immunization 999999 1 true
+replaceitem entity @e[type=mutantbeasts:mutant_zombie] armor.head chainmail_helmet{Enchantments:[{id:"cursery:curse_undead",lvl:1s}]} 1
