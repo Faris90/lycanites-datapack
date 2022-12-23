@@ -19,7 +19,7 @@ execute as @e[type=lycanitesmobs:aegis,nbt=!{ExtraBehaviour:{WaterBreathingOverr
 execute as @e[type=lycanitesmobs:grigori,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
 execute as @e[type=lycanitesmobs:cinder,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
 execute as @e[type=lycanitesmobs:wraamon] run attribute @s forge:swim_speed base set 0.5
-execute as @e[type=lycanitesmobs:raiko,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:epion] run attribute @s forge:swim_speed base set 0.2
 execute as @e[type=lycanitesmobs:naxiris,nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
 execute as @e[type=lycanitesmobs:cherufe,nbt=!{ExtraBehaviour:{SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{SwimmingOverride:1b}}
 execute as @e[type=lycanitesmobs:cephignis,nbt=!{ExtraBehaviour:{FlightOverride:1b}}] run data merge entity @s {ExtraBehaviour:{FlightOverride:1b}}
@@ -33,8 +33,12 @@ execute as @e[type=lycanitesmobs:kathoga,nbt={Subspecies:1b},nbt=!{ExtraBehaviou
 execute as @e[type=lycanitesmobs:ostimien,nbt={Variant:1b},nbt=!{ExtraBehaviour:{FlightOverride:1b}}] run data merge entity @s {ExtraBehaviour:{FlightOverride:1b}}
 execute as @e[type=lycanitesmobs:ostimien,nbt={Variant:2b},nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
 execute as @e[type=lycanitesmobs:triffid,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
-execute as @e[type=lycanitesmobs:pixen] run attribute @s forge:swim_speed base set 0.5
+execute as @e[type=lycanitesmobs:pixen] run attribute @s forge:swim_speed base set 0.3
 execute as @e[type=lycanitesmobs:remobra,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:gnekk,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b}}
+execute as @e[type=lycanitesmobs:gnekk] run attribute @s forge:swim_speed base set 0.3
+execute as @e[type=lycanitesmobs:volcan,nbt=!{ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}] run data merge entity @s {ExtraBehaviour:{WaterBreathingOverride:1b,SwimmingOverride:1b}}
+execute as @e[type=lycanitesmobs:volcan] at @s if block ~ ~ ~ lava run data merge entity @s {Motion:[0.0,0.25,0.0]}
 
 #Vanilla
 execute as @e[type=vex] run attribute @s forge:swim_speed base set 0
